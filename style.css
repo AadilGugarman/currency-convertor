@@ -44,6 +44,13 @@ h2 {
   padding: 20px;
   border-radius: 5px;
   border: 1px solid lightgray;
+  cursor: pointer;
+}
+.form input::placeholder {
+  font-size: 1.2rem;
+}
+.form input:hover {
+  border: 1px solid #6647b6;
 }
 .form input:focus {
   outline: none;
@@ -67,7 +74,9 @@ h2 {
   opacity: 0.9;
   font-size: 1.5rem;
 }
-
+#arrow:hover {
+  opacity: 1;
+}
 .select-currency {
   display: flex;
   border: 1px solid lightgrey;
@@ -75,6 +84,10 @@ h2 {
   align-items: center;
   padding: 10px;
   width: 6rem;
+  cursor: pointer;
+}
+.select-currency:hover {
+  border: 1px solid #6647b6;
 }
 .select-currency img {
   width: 1.5rem;
@@ -84,6 +97,7 @@ h2 {
   outline: none;
   border: none;
   font-size: 1rem;
+  cursor: pointer;
 }
 .message {
   margin-top: 10px;
