@@ -83,6 +83,7 @@ h2 {
   padding: 10px;
   width: 6rem;
   cursor: pointer;
+  overflow-x: hidden;
 }
 .select-currency:hover {
   border: 1px solid #6647b6;
@@ -96,6 +97,7 @@ h2 {
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  overflow: auto;
 }
 .message {
   margin-top: 10px;
@@ -107,7 +109,7 @@ h2 {
 
 .message p {
   margin-top: 20px;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .message button {
@@ -118,7 +120,7 @@ h2 {
   border: none;
   cursor: pointer;
   margin-top: 20px;
-  width: 125%;
+
   font-size: 1.2rem;
 }
 .message button:hover {
