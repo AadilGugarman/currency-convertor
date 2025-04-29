@@ -16,10 +16,10 @@ for (let select of selectCurrency) {
     newOption.innerText = currCode;
     newOption.value = currCode;
 
-    if (select.name == "from" && currCode == "INR") {
+    if (select.name == "from" && currCode == "USD") {
       newOption.selected = "selected";
     }
-    if (select.name == "to" && currCode == "USD") {
+    if (select.name == "to" && currCode == "INR") {
       newOption.selected = "selected";
     }
     select.append(newOption);
@@ -46,12 +46,11 @@ const getExchangeRate = async () => {
   let input = document.querySelector(".form input");
   let amount = input.value;
   if (amount < 1 || amount == "") {
-    console.log(amount);
     amount = 1;
     input.value = "1";
   }
   try {
-    let URL = `${mainURL}${fromCurr.value}_${toCurr.value}.json`;
+    let URL = `${mainURL}${toCurr.value}_${fromCurr.value}.json`;
     let response = await fetch(URL);
     let data = await response.json();
     let currRate = data.rate;
